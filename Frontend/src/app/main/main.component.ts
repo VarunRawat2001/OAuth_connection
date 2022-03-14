@@ -12,24 +12,7 @@ export class MainComponent implements OnInit {
   constructor(private service: ConnectionService ) { }
 
   ngOnInit(): void {
-    this.getdata()
   }
 
-  blob:Blob=new Blob();
-
-  getdata()
-  {
-    this.service.getdata().subscribe((res)=>
-    {
-      this.blob = new Blob([JSON.stringify(res, null, 2)], {type : 'application/json'});
-      console.log(res);
-    })
-  }
-
-  download()
-  {
-  saveAs(this.blob, 'text.txt')
-  }
-  
 
 }

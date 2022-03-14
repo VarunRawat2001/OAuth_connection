@@ -8,8 +8,8 @@ import { ConnectionService } from './connection.service';
 })
 export class AppComponent {
   title = 'Frontend';
-  onSubmit(connectionForm:any)
-  {
-console.log(connectionForm.value)
-  }
+//   onSubmit(connectionForm:any)
+//   {
+// console.log(connectionForm.value)
+//   }
 }

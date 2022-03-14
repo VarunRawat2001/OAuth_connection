@@ -8,20 +8,16 @@ app.use(cors())
 app.use(bodypaser.json())
 app.use(express.json())
 
-app.listen(8081,()=>{
+app.listen(8080,()=>{
     console.log("server is running")
 });
 
 
-
-app.get('/',(req,res)=>
+app.post('/create',(req,res)=>
 {
-    var a={
-        "football": 'Yes',
-        "reading": 'true'       
-    }
-    res.send(a)
+    console.log(req.body);
+    let cliientId= req.body.cliientId;
+    let scope= req.body.scope;
+    let url=req.body.url;
+    let responseType=req.body.responseType;
 })
-
-
-

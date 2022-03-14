@@ -1,0 +1,22 @@
+<div class="container">
+    <form [formGroup]="userForm" (ngSubmit)="userSubmit()">
+
+        <div class="col-lg-4 mt-2" >
+            <input type="text" class="form-control" formControlName="clientId" placeholder="Enter ID"  >
+        </div>
+        <div class="col-lg-4 mt-2" >
+            <input type="text" class="form-control" formControlName="scope" placeholder="Enter Scope">
+        </div>
+        <div class="col-lg-4 mt-2">
+            <input type="text" class="form-control" formControlName="url" placeholder="Enter url">
+        </div>
+        <div class="col-lg-4 mt-2">
+            <input type="text" class="form-control" formControlName="responseType" placeholder="Enter Response Type">
+        </div>
+
+        <div class="col-lg-4 mt-2" >
+            <input type="submit" value="submit">
+        </div>
+
+    </form> 
+</div>
